@@ -14,6 +14,18 @@ public class Basic_oops{
         int seats;
         double engineCapacity;
     }
+
+    // person class
+    public static class Person{
+        String name;
+        int age;
+        double height;
+
+        // method 
+        void print(){
+            System.out.println("Name : "+name+ " age : "+age+" height : "+height);
+        }
+    }
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -36,13 +48,22 @@ public class Basic_oops{
 
         // car class object
         Car c1 = new Car();
+        System.out.println("Enter car name : ");
         c1.name = sc.nextLine();
+        System.out.println("Enter no. of seats : ");
         c1.seats = sc.nextInt();
+        System.out.println("Enter Engine capacity : ");
         c1.engineCapacity = sc.nextDouble();
 
         System.out.println("Name of car : "+c1.name);
         System.out.println("Seats : "+c1.seats);
         System.out.println("Engine Capacity : "+c1.engineCapacity);
+
+        // object creating for person
+        Person p1 = new Person();
+        p1.name = "BOB"; p1.age = 24; p1.height = 5.9;
+        p1.print(); // method calling
+
 
         sc.close();
     }
