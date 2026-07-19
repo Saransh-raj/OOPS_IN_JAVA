@@ -32,6 +32,7 @@ public class Segregate_zero_one {
         for (int i : arr) {
             System.out.print(i+" ");
         }
+        
         sc.close();
     }
 }
